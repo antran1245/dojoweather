@@ -1,0 +1,121 @@
+/* Reset CSS */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+
+/* header */
+body header {
+    width: 100%;
+    background-color: #9fc4f8;
+}
+#dojo-header, nav#cities {
+    display: flex;
+    align-items: center;
+}
+#dojo-header {
+    width: 80vw;
+    color: #fffdfe;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 10px;
+}
+nav#cities {
+    width: 30vw;
+    justify-content: space-evenly;
+}
+nav#cities a{
+    color: #fffdfe;
+    text-decoration: none;
+    font-size: larger;
+}
+
+/* container */
+#container {
+    width: 80vw;
+    margin: 0 auto;
+    
+}
+#container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    background-color: white;
+    padding: 10px 0 10px 0;
+}
+#selection {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: larger;
+}
+/* weather cards */
+#weather-cards {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+/* individual card */
+.card {
+    background-color: #eeeeee;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
+    min-height: 400px;
+    margin: 0 10px 10px 10px;
+}
+.card .icon {
+    border-radius: 50%;
+    width: 70%;
+}
+.card #degree {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: x-large;
+    font-weight: bold;
+}
+.card h3 {
+    font-size: xx-large;
+}
+.card p {
+    font-size: large;
+}
+#degree #high {
+    color: red;
+}
+#degree #low {
+    color: blue;
+}
+/* cookie */
+#cookie {
+    position: fixed;
+    bottom: 0;
+    left: 10%;
+    width: 80vw;
+    border: 2px solid black;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 0 30px 0;
+}
+#cookie img, #cookie #detail {
+    margin-left: 20px;
+}
+#cookie #accept {
+    margin-right: 20px;
+    background-color: #9bc3f8;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    padding: 5px 10px 5px 10px;
+}

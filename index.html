@@ -8,6 +8,74 @@
         <title>DojoWeather</title>
     </head>
     <body>
+        <header>
+            <div id="dojo-header">
+                <h1>DojoWeather</h1>
+                <nav id="cities">
+                    <a href="#" onclick="selectedCity(this)">Burbank</a>
+                    <a href="#" onclick="selectedCity(this)">Chicago</a>
+                    <a href="#" onclick="selectedCity(this)">Dallas</a>
+                </nav>
+            </div>
+        </header>
+        <div id="container">
+            <header>
+                <h2 id="current-city">San Jose</h2>
+                <div id="show-temperature">
+                    <label>show temperature in </label>
+                    <select id="selection" onchange="chooseDegree(this)" autocomplete="off">
+                        <option value="c">&#8451;</option>
+                        <option value="f">&#8457;</option>
+                    </select>
+                </div>
+            </header>
+            <div id="weather-cards">
+                <div class="card">
+                    <h3>Today</h3>
+                    <img src="assets/some_rain.png" alt="rain" class="icon">
+                    <p>some rain</p>
+                    <div id="degree">
+                        <div id="high"><span>24</span>&#176;</div>
+                        <div id="low"><span>18</span>&#176;</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Tomorrow</h3>
+                    <img src="assets/some_sun.png" alt="sun" class="icon">
+                    <p>some sun</p>
+                    <div id="degree">
+                        <div id="high"><span>27</span>&#176;</div>
+                        <div id="low"><span>19</span>&#176;</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Friday</h3>
+                    <img src="assets/some_clouds.png" alt="clouds" class="icon">
+                    <p>some clouds</p>
+                    <div id="degree">
+                        <div id="high"><span>21</span>&#176;</div>
+                        <div id="low"><span>16</span>&#176;</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Saturday</h3>
+                    <img src="assets/some_sun.png" alt="sun" class="icon">
+                    <p>some sun</p>
+                    <div id="degree">
+                        <div id="high"><span>26</span>&#176;</div>
+                        <div id="low"><span>21</span>&#176;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cookie">
+            <img src="assets/cookie.png" alt="cookie" class="icon">
+            <div id="detail">
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse out traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button id="accept" onclick="acceptCookie()">I Accept</button>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
